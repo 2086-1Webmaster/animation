@@ -1,0 +1,48 @@
+/*Colors*/
+
+:root {
+    --pale-pink: #F2D4D7;
+    --light-red: #FF7F7F;
+    --soft-black: #181A18;
+    --pale-pink-shadow: #c2aaac;
+
+
+}
+
+body{
+    color: white;
+    margin:0;
+    background-color: var(--soft-black);
+}
+
+.wrapper {
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper a.flat-btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: var(--pale-pink);
+    padding: 15px 50px;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 0 var(--pale-pink-shadow);
+}
+
+
+.wrapper a.flat-btn:hover {
+    background: var(--light-red);
+}
+
+
+.wrapper a.flat-btn:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
